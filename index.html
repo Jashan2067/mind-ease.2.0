@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
   <title>MindEase — Your Mental Wellness Companion</title>
-  <link rel="icon" type="image/png" href="mind peace logo.png">
   <link rel="icon" type="image/png" href="logo-1.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
-  <meta name="theme-color" content="#5B6A8B"> </head>
+  <meta name="theme-color" content="#5B6A8B">
+</head>
+
 <body>
   <header class="site-header">
     <div class="header-top">
@@ -34,8 +36,10 @@
       <button class="tablink" role="tab" aria-selected="false" data-tab="meditation">Meditation</button>
       <button class="tablink" role="tab" aria-selected="false" data-tab="journal">Journal</button>
       <button class="tablink" role="tab" aria-selected="false" data-tab="analysis">Analytics</button>
-      <button class="tablink" role="tab" aria-selected="false" data-tab="chat" onclick="window.location.href='http://127.0.0.1:5000'">Clara</button>
+      <button class="tablink" role="tab" aria-selected="false" data-tab="chat"
+        onclick="window.location.href='http://127.0.0.1:5000'">Clara</button>
       <button class="tablink" onclick="location.href='survey.html'">Survey</button>
+      <button class="tablink" onclick="location.href='game.html'">Games</button>
     </nav>
   </header>
 
@@ -43,7 +47,8 @@
     <section id="home" class="tabcontent hero active" role="tabpanel" aria-labelledby="home-tab">
       <div class="hero-content card">
         <h2>Welcome to MindEase</h2>
-        <p class="hero-sub">Small daily practices to bring calm and clarity. Start with a breathing exercise or a quick journal entry.</p>
+        <p class="hero-sub">Small daily practices to bring calm and clarity. Start with a breathing exercise or a quick
+          journal entry.</p>
         <div class="hero-cta">
           <button class="primary" data-tab-target="journal">Start Journaling</button>
           <button class="secondary" data-tab-target="meditation">Try 5-minute Calm</button>
@@ -53,22 +58,22 @@
 
     <section id="songs" class="tabcontent" role="tabpanel" aria-labelledby="songs-tab">
       <div class="card">
-        <h2>🎧 Cheerful Songs</h2>
+        <h2> Every Moment Counts!</h2>
         <p>Listen and lift your mood with uplifting ambient tracks.</p>
         <ul class="media-list">
-          <li>Happy Vibes
+          <li>Nostalgic Memories
             <audio controls preload="none" aria-label="Happy Vibes Song">
-              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+              <source src="m1.mp3" type="audio/mpeg">
             </audio>
           </li>
-          <li>Good Energy
+          <li>Solitude
             <audio controls preload="none" aria-label="Good Energy Song">
-              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+              <source src="m2.mp3" type="audio/mpeg">
             </audio>
           </li>
-          <li>Calm Breeze
+          <li>Inspiring Cinematic
             <audio controls preload="none" aria-label="Calm Breeze Song">
-              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+              <source src="m3.mp3" type="audio/mpeg">
             </audio>
           </li>
         </ul>
@@ -77,31 +82,66 @@
 
     <section id="videos" class="tabcontent" role="tabpanel" aria-labelledby="videos-tab">
       <div class="card">
-        <h2>🎬 Feel-Good Films</h2>
+        <h2> Feel-Good Films</h2>
         <p>Short, inspiring videos for a mindful break.</p>
         <div class="video-container">
-          <video controls preload="none" aria-label="Short Film 1"><source src="1.mp4" type="video/mp4"></video>
-          <video controls preload="none" aria-label="Short Film 2"><source src="5.mp4" type="video/mp4"></video>
-          <video controls preload="none" aria-label="Short Film 3"><source src="3.mp4" type="video/mp4"></video>
-          <video controls preload="none" aria-label="Short Film 4"><source src="4.mp4" type="video/mp4"></video>
+          <video controls preload="none" aria-label="Short Film 1">
+            <source src="1.mp4" type="video/mp4">
+          </video>
+          <video controls preload="none" aria-label="Short Film 2">
+            <source src="5.mp4" type="video/mp4">
+          </video>
+          <video controls preload="none" aria-label="Short Film 3">
+            <source src="3.mp4" type="video/mp4">
+          </video>
+          <video controls preload="none" aria-label="Short Film 4">
+            <source src="4.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </section>
 
     <section id="articles" class="tabcontent" role="tabpanel" aria-labelledby="articles-tab">
       <div class="card">
-        <h2>📚 Read & Reflect</h2>
+        <h2> Read & Reflect</h2>
         <article>
           <p><strong>“You can’t control the waves, but you can learn to surf.”</strong> — Jon Kabat-Zinn</p>
-          <p>Explore articles about balance, focus, and emotional strength. We recommend starting with our <strong>'Mindful Morning'</strong> guide.</p>
-          <button class="secondary small">Read More</button>
+          <p>Explore articles about balance, focus, and emotional strength. We recommend starting with our
+            <strong>'Mindful Morning'</strong> guide.
+          </p>
+          <p><strong>The world moves fast, but your mind doesn’t have to. Peace is something you build slowly — through
+              small breaths, gentle thoughts, and kinder self-talk. When you learn to rest, you learn to grow.</strong>
+            — Inspired by Rupi Kaur</p>
+          <p><strong>Some days you bloom, some days you break — both are part of becoming. Mental wellness means
+              allowing yourself to feel without judgement and trusting that every step, forward or backward, still
+              counts.</strong>
+            — Inspired by Atticus</p>
+          <p><strong>In a noisy world, choose softness for yourself. Speak kindly, rest deeply, and let go of the
+              pressure to be perfect. Your mind deserves the same care you offer others.</strong>
+            — Inspired by Nayyirah Waheed</p>
+          <button id="readMoreBtn" class="secondary small">Read More</button>
+          <div id="moreArticles" class="hidden">
+            <p><strong>Healing doesn't mean the damage never existed. It means the damage no longer controls your
+                life. You are allowed to take up space, to feel your emotions, and to prioritize your
+                peace.</strong>
+              — Inspired by Unknown</p>
+            <p><strong>Your mental health is a priority, not a luxury. Taking time to heal, rest, and recharge isn't
+                selfish — it's necessary. You can't pour from an empty cup.</strong>
+              — Inspired by Sam Levenson</p>
+            <p><strong>Sometimes the most productive thing you can do is rest. Your worth isn't measured by how busy
+                you are, but by how well you take care of yourself.</strong>
+              — Inspired by Unknown</p>
+            <p><strong>Be gentle with yourself. You're doing the best you can with what you have. Progress isn't
+                always linear, and that's perfectly okay.</strong>
+              — Inspired by Karen Salmansohn</p>
+          </div>
         </article>
       </div>
     </section>
 
     <section id="meditation" class="tabcontent" role="tabpanel" aria-labelledby="meditation-tab">
       <div class="card">
-        <h2>🧘 Quick Calm</h2>
+        <h2> Quick Calm</h2>
         <p>Try this 5-minute mindful breathing session:</p>
         <div class="meditation-controls">
           <button id="startMeditation" class="primary">Start 5 Min Timer</button>
@@ -109,14 +149,14 @@
         </div>
         <p id="timerDisplay" class="timer-text" aria-live="polite"></p>
         <div class="voice-controls">
-          <button id="startVoiceMeditation" class="secondary small">🎤 Voice Guided</button>
+          <button id="startVoiceMeditation" class="secondary small"> Voice Guided</button>
         </div>
       </div>
     </section>
 
     <section id="journal" class="tabcontent" role="tabpanel" aria-labelledby="journal-tab">
       <div class="card journal-card">
-        <h2>📝 My Journal</h2>
+        <h2> My Journal</h2>
 
         <div class="journal-controls">
           <select id="journalMood" aria-label="Select Mood">
@@ -136,7 +176,8 @@
           </div>
         </div>
 
-        <textarea id="journalInput" placeholder="Write about your day and how you feel..." aria-label="Journal entry input"></textarea>
+        <textarea id="journalInput" placeholder="Write about your day and how you feel..."
+          aria-label="Journal entry input"></textarea>
         <p class="autosave-note" id="autosaveNote" aria-live="polite">Autosave: Not saved</p>
 
         <ul id="journalList" class="journal-list"></ul>
@@ -149,24 +190,83 @@
         <p>Visualize your emotional journey over time.</p>
         <canvas id="moodChart" style="max-width:100%; height: auto;"></canvas>
         <div id="insightBox" class="insight-box">
-          <p><strong>Today's Insight:</strong> Based on your recent entries, your mood stability is high. Keep up the good work!</p>
+          <p><strong>Today's Insight:</strong> Based on your recent entries, your mood stability is high. Keep up the
+            good work!</p>
         </div>
       </div>
     </section>
 
 
+    <section id="games" class="tabcontent" role="tabpanel" aria-labelledby="games-tab">
+      <div class="card">
+        <h2>Play & Unwind Games</h2>
+        <p>Short, calming games to reduce stress. Pick one to start and close when you're ready to continue.</p>
+
+        <div class="games-grid">
+          <div class="game-card">
+            <h3>Breathing Circle</h3>
+            <p>Guided breathing with a soothing animated circle.</p>
+            <button class="secondary small" data-game="breathing">Open</button>
+          </div>
+
+          <div class="game-card">
+            <h3>Bubble Pop</h3>
+            <p>Pop gentle bubbles - calming and satisfying.</p>
+            <button class="secondary small" data-game="bubble">Open</button>
+          </div>
+
+          <div class="game-card">
+            <div id="breathingCircle" class="breathing-circle" aria-hidden="true"></div>
+            <p id="breathingText">Ready to breathe</p>
+            <div class="game-controls">
+              <button id="startBreath" class="primary small">Start</button>
+              <button id="stopBreath" class="secondary small">Stop</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="bubble" class="game-panel" aria-hidden="true">
+          <div class="bubble-wrap">
+            <div id="bubbleArea" class="bubble-area" aria-label="Bubble pop area"></div>
+            <div class="game-controls">
+              <button id="spawnBubbles" class="primary small">Spawn Bubbles</button>
+              <button id="clearBubbles" class="secondary small">Clear</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="memory" class="game-panel" aria-hidden="true">
+          <div class="memory-wrap">
+            <div id="memoryGrid" class="memory-grid" role="grid" aria-label="Memory match"></div>
+            <div class="game-controls">
+    </section>
+
     <section id="survey" class="tabcontent" role="tabpanel" aria-labelledby="survey-tab">
       <div class="card">
         <h2>Wellness Survey</h2>
-        <p>This is where your survey content would appear if it were a tab, but the navigation button redirects to a separate page.</p>
+        <p>This is where your survey content would appear if it were a tab, but the navigation button redirects to a
+          separate page.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Made with 💙 for mental wellness | © 2025 MindEase | BCM School Basant City</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><a href="about.html" class="about-us">About MindEase</a></h3>
+        <p>MindEase is a peaceful space that helps students relax, recharge, and find balance through calming
+          musics, videos, mindful breathing plus meditation, journaling, chat with clara and simple wellness games.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:ruakroon@gmail.com">ruakroon@gmail.com</a></p>
+        <p>Phone: +91 9781159914</p>
+      </div>
+    </div>
+    <p class="copyright">Made with love and care for mental wellness | 2025 MindEase | BCM School Basant City</p>
   </footer>
 
   <script src="script.js" defer></script>
 </body>
+
 </html>

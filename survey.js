@@ -1,10 +1,10 @@
 
-window.onload = function() {
+window.onload = function () {
     const form = document.getElementById("surveyForm");
     form.reset();
 };
 
-document.getElementById("surveyForm").addEventListener("submit", function(e) {
+document.getElementById("surveyForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
     const form = e.target;
@@ -31,17 +31,23 @@ document.getElementById("surveyForm").addEventListener("submit", function(e) {
     const scoreMessage = document.getElementById("scoreMessage");
 
     let message = "";
+    let rating = "";
+
     if (totalScore <= 3) {
-        message = "🌪 You appear to be feeling emotionally burdened. Please take gentle care of yourself and consider reaching out for support.";
+        rating = "Good";
+        message = "You appear to be feeling emotionally burdened. Please take gentle care of yourself and consider reaching out for support.";
     } else if (totalScore <= 7) {
-        message = "🌧 You might be carrying moderate stress or worry about your past or future. Consider journaling or talking with someone you trust.";
+        rating = "Very Good";
+        message = "You might be carrying moderate stress or worry about your past or future. Consider journaling or talking with someone you trust.";
     } else if (totalScore <= 10) {
-        message = "☀️ You seem emotionally balanced and in tune with your feelings. Keep nurturing this awareness!";
+        rating = "Excellent";
+        message = "You seem emotionally balanced and in tune with your feelings. Keep nurturing this awareness!";
     } else {
+        rating = "Good";
         message = "You seem emotionally unbalanced, with good awareness of your feelings.";
     }
 
-    scoreDisplay.textContent = `Your Reflection Score: ${totalScore} / 10`;
+    scoreDisplay.textContent = `Your Reflection Rating: ${rating}`;
     scoreMessage.textContent = message;
 
     form.classList.add("hidden");
