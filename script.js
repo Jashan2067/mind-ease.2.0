@@ -1,8 +1,3 @@
-/* ========= script.js for MindEase =========
-   Handles tabs, media controls, meditation timer,
-   journal system (save/edit/delete/filter), mood chart,
-   Clara frontend, voice features, dark mode, PWA registration.
-   ========================================== */
 
 (() => {
   // --------- Helpers ----------
@@ -79,15 +74,10 @@
   function setupMeditation() {
     const startBtn = $('#startMeditation');
     const stopBtn = $('#stopMeditation');
-    const voiceBtn = $('#startVoiceMeditation');
+
 
     if (startBtn) startBtn.addEventListener('click', startMeditation);
     if (stopBtn) stopBtn.addEventListener('click', resetMeditationTimer);
-
-    // voice guided (simple)
-    if (voiceBtn) voiceBtn.addEventListener('click', () => {
-      speak("Close your eyes. Breathe in slowly for four counts. Hold for two. Exhale for four. Repeat.");
-    });
 
     // reset on tab hidden
     document.addEventListener('visibilitychange', () => {
@@ -105,7 +95,7 @@
       display.textContent = formatTime(medSeconds);
       if (medSeconds <= 0) {
         clearInterval(medInterval);
-        display.textContent = "✅ Time's up! Great job staying mindful!";
+        display.textContent = "Time's up! Great job staying mindful!";
         speak("Well done. You completed your mindfulness session.");
       }
     }, 1000);
@@ -115,10 +105,10 @@
     clearInterval(medInterval);
     medSeconds = 300;
     const display = $('#timerDisplay');
-    if (display) display.textContent = "⏸️ Meditation stopped. Please start again.";
+    if (display) display.textContent = "Meditation stopped. Please start again.";
   }
 
-  function formatTime(s) { const m = Math.floor(s / 60); const sec = s % 60; return `⏳ ${m}:${sec < 10 ? '0' : ''}${sec}`; }
+  function formatTime(s) { const m = Math.floor(s / 60); const sec = s % 60; return ` ${m}:${sec < 10 ? '0' : ''}${sec}`; }
 
   // ------- Journal System ----------
   const JOURNAL_KEY = 'mindease_journals_v1';
