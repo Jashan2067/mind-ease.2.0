@@ -260,7 +260,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **MindEase** is developed with love and care for mental wellness.
 
 ### Contact
-- **Email**: [ruakroon@gmail.com](mailto:ruakroon@gmail.com)
+- **Email**: [mindease123@gmail.com](mailto:mindease123@gmail.com)
 - **Phone**: +91 9781159914
 - **Institution**: BCM School Basant City
 
